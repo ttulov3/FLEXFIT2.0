@@ -6,8 +6,7 @@
 }
 
 
-html,
-body {
+.htmlBody {
     margin: 0;
 }
 
@@ -31,15 +30,19 @@ body {
     place-content: center;
 }
 
-.header p {
+.fit {
     font-size: 66px;
-    border-bottom: 1px solid #FFFF;
-    margin:0;
+    border-bottom: 1px solid #ffffff;
+    margin: 0;
     height: max-content;
 }
 
 .flex {
     color: transparent;
+    font-size: 66px;
+    margin: 0;
+    height: max-content;
+    border-bottom: 1px solid #ffffff;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #ffffff;
 

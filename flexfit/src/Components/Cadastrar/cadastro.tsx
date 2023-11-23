@@ -50,7 +50,10 @@ export function Cadastro(){
 
   return(
     <div className={styles.body}>
-    
+      <header className={styles.header}>
+       <p className={styles.flex}>FLEX</p><p className={styles.fit}>FIT</p>
+    </header>
+
       <form className={styles.form} onSubmit={registro}>
         <Input className={styles.formInput}
            placeholder="Nome:"
@@ -79,7 +82,7 @@ export function Cadastro(){
           onChange={ (e) => setRepetirSenhaInput(e.target.value) }
         />
 
-        <button type='submit' className='button'>ENTRAR</button>
+        <button type='submit' className='button'>CADASTRAR</button>
        
 
       </form>
