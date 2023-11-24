@@ -1,12 +1,10 @@
-import React from 'react';
-import imagem from '../../assets/img'
-import './agenda.css';
+import './agenda.module.css';
 
-function Agenda() {
+export function Agenda() {
   return (
     <div>
       <header>
-        <button className="voltar"><a href="../Home/home.html"><img src="../../assets/img/voltar.png" alt="voltar"></a></button>
+        <button className="voltar"><a href="../Home/home.html"><img src="/img/voltar.png" alt="voltar" /></a></button>
         <p className="flex">FLEX</p><p>FIT</p>
       </header>
       <main>
@@ -21,10 +19,10 @@ function Agenda() {
         <a href="../Horarios/Ajiujitsu.html"><div className="container" id="jiujitsu">AULA DE <p>JIUJITSU</p></div></a>
       </main>
       <footer>
-        <button><a href="../Home/home.html"><img src="../../assets/img/casa.png" alt="casa"></a></button>
-        <button><a href="../Agenda/agenda.html"><img src="../../assets/img/agenda.png" alt="agenda"></a></button>
-        <button><a href="../Tabela/tabela.html"><img src="../../assets/img/halter.png" alt="halter"></a></button>
-        <button><a href="../Perfil/perfil.html"><img src="../../assets/img/perfil.png" alt="perfil"></a></button>
+        <button><a href="../Home/home.html"><img src="/img/casa.png" alt="casa" /></a></button>
+        <button><a href="../Agenda/agenda.html"><img src="/img/agenda.png" alt="agenda" /></a></button>
+        <button><a href="../Tabela/tabela.html"><img src="/img/halter.png" alt="halter" /></a></button>
+        <button><a href="../Perfil/perfil.html"><img src="/img/perfil.png" alt="perfil" /></a></button>
       </footer>
     </div>
   );

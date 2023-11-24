@@ -1,90 +1,90 @@
 import { createBrowserRouter } from "react-router-dom";
 
 //Importação dos arquivos das páginas
-import {Entrar} from "./Pages/Entrar/";
-import {Logar} from "./Components/Logar/index";
+// import {Entrar} from "./Pages/Entrar/";
+// import {Logar} from "./Components/Logar/index";
 import {Cadastro} from "./Components/Cadastrar/cadastro";
-import {Tabela} from "./Pages/Tabela/"
-import {Ficha} from "./Pages/Ficha/";
-import {Home} from "./Pages/Home/";
+// import {Tabela} from "./Pages/Tabela/"
+// import {Ficha} from "./Pages/Ficha/";
+// import {Home} from "./Pages/Home/";
 import {Agenda} from "./Pages/Agenda/agenda";
-import {Across} from "./Pages/Horarios/";
-import {Afitdance} from "./Pages/Horarios/";
-import {Ajiujitsu} from "./Pages/Horarios/"
-import {Amuaythai} from "./Pages/Horarios/"
-import {Akickboxing} from "./Pages/Horarios/"
-import {Apilates} from "./Pages/Horarios/"
-import {Alocal} from "./Pages/Horarios/"
-import {Aparkour} from "./Pages/Horarios/"
-import {Perfil} from "./Pages/Perfil/"
+// import {Across} from "./Pages/Horarios/";
+// import {Afitdance} from "./Pages/Horarios/";
+// import {Ajiujitsu} from "./Pages/Horarios/"
+// import {Amuaythai} from "./Pages/Horarios/"
+// import {Akickboxing} from "./Pages/Horarios/"
+// import {Apilates} from "./Pages/Horarios/"
+// import {Alocal} from "./Pages/Horarios/"
+// import {Aparkour} from "./Pages/Horarios/"
+// import {Perfil} from "./Pages/Perfil/"
 
 //Cria o router que será utilizado para navegar entre as rotas
 const router = createBrowserRouter([
-  {
-    path: '/entrar',
-    element: <Entrar/>
-  },
+  // {
+  //   path: '/entrar',
+  //   element: <Entrar/>
+  // },
   {
     path: '/cadastro',
     element: <Cadastro/>
   },
-  {
-    path: '/login',
-    element: <Logar/>
-  },
-  {
-    path: '/home',
-    element: <Home/>
-  },
+  // {
+  //   path: '/login',
+  //   element: <Logar/>
+  // },
+  // {
+  //   path: '/home',
+  //   element: <Home/>
+  // },
   
   {
     path: '/agenda',
     element: <Agenda/>
   },
-  {
-    path: '/Apilates',
-    element: <Apilates/>
-  },
-  {
-    path: '/Afitdance',
-    element: <Afitdance/>
-  },
-  {
-    path: '/Ajiujitsu',
-    element: <Ajiujitsu/>
-  },
-  {
-    path: '/Akickboxing',
-    element: <Akickboxing/>
-  },
+  // {
+  //   path: '/Apilates',
+  //   element: <Apilates/>
+  // },
+  // {
+  //   path: '/Afitdance',
+  //   element: <Afitdance/>
+  // },
+  // {
+  //   path: '/Ajiujitsu',
+  //   element: <Ajiujitsu/>
+  // },
+  // {
+  //   path: '/Akickboxing',
+  //   element: <Akickboxing/>
+  // },
   
-  {
-    path: '/Alocal',
-    element: <Alocal/>
-  },
+  // {
+  //   path: '/Alocal',
+  //   element: <Alocal/>
+  // },
   
-  {
-    path: '/Amuaythai',
-    element: <Amuaythai/>
-  },
+  // {
+  //   path: '/Amuaythai',
+  //   element: <Amuaythai/>
+  // },
   
-  {
-    path: '/Aparkour',
-    element: <Aparkour/>
-  },
+  // {
+  //   path: '/Aparkour',
+  //   element: <Aparkour/>
+  // },
   
-  {
-    path: '/Across',
-    element: <Across/>
-  },
-  {
-    path: '/tabela',
-    element: <Tabela/>
-  },
-  {
-    path: '/ficha',
-    element: <Ficha/>
-  },
+  // {
+  //   path: '/Across',
+  //   element: <Across/>
+  // },
+  // {
+  //   path: '/tabela',
+  //   element: <Tabela/>
+  // },
+  // {
+  //   path: '/ficha',
+  //   element: <Ficha/>
+  // },
   {
     path: '/treinogluteo',
     element: <Cadastro/>
@@ -101,10 +101,10 @@ const router = createBrowserRouter([
     path: '/peito',
     element: <Cadastro/>
   },
-  {
-    path: '/perfil',
-    element: <Perfil/>
-  },
+  // {
+  //   path: '/perfil',
+  //   element: <Perfil/>
+  // },
 ])
 
 export { router };
