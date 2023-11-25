@@ -1,5 +1,5 @@
 import { FormEvent, useState, useEffect} from 'react'
-import { Input } from "../../Components/Input";
+import { Input } from "../Input";
 import styles from "./cadastro.module.css"
 import {db} from '../../services/firebaseConnection'
 import{

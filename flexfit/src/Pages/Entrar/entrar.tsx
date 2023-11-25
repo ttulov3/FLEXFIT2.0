@@ -1,14 +1,14 @@
 import React from 'react';
-import './entrar.css';
+import './entrar.module.css';
 
-function Entrar() {
+export function Entrar() {
   return (
     <div>
       <header>
         <p className="flex">FLEX</p><p>FIT</p>
       </header>
       <main>
-        <img src="../../assets/img/homem.png" alt="homem"/>
+        <img src="/img/homem.png" alt="homem"/>
         <button>ENTRAR</button>
       </main>
     </div>
