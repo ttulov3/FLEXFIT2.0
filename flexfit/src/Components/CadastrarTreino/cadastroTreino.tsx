@@ -1,4 +1,4 @@
-import { FormEvent, useState, useEffect} from 'react'
+import { FormEvent, useState} from 'react'
 import { Input } from "../Input";
 import styles from "./cadastroTreino.module.css"
 import {db} from '../../services/firebaseConnection'
@@ -46,7 +46,7 @@ export function CadastroTreino(){
       setDescricaoAInput("")
       setPesoInput("")
       setTempoDescansoInput("")
-      console.log("CADAS1TRADO COM SUCESSO")
+      console.log("CADASTRADO COM SUCESSO")
 
     })
     .catch((error)=>{
@@ -101,9 +101,7 @@ export function CadastroTreino(){
        
 
       </form>
-      <footer>
-      <p className="text">Possui login? <a href="../Logar/login.html" className="cadastrese">Fazer login</a></p>
-    </footer>
+
 
     
     </div>

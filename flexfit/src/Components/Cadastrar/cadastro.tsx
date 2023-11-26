@@ -1,4 +1,4 @@
-import { FormEvent, useState, useEffect} from 'react'
+import { FormEvent, useState} from 'react'
 import { Input } from "../Input";
 import styles from "./cadastro.module.css"
 import {db} from '../../services/firebaseConnection'
@@ -12,15 +12,21 @@ export function Cadastro(){
   const [nomeInput, setNomeInput] = useState("")
   const [emailInput, setEmailInput] = useState("")
   const [academiaInput, setAcademiaInput] = useState("")
+  const [sexoInput, setSexoInput] = useState("")
+  const [dataNascimentoInput, setdataNascimentoInput] = useState("")
+  const [telefoneInput, setTelefoneInput] = useState("")
+  const [objetivoInput, setObjetivoInput] = useState("")
+  const [observacaoInput, setObservacaoInput] = useState("")
+  const [cpfInput, setCpfInput] = useState("")
   const [senhaInput, setSenhaInput] = useState("")
-  const [repetirsenhaInput, setRepetirSenhaInput] = useState("")
+ 
 
 
 
 
   function registro(e: FormEvent){
     e.preventDefault();
-    if(nomeInput === " " || emailInput === " " ||academiaInput === " " || senhaInput === " " || repetirsenhaInput === " " ){
+    if(nomeInput === " " || emailInput === " " ||academiaInput === " " || senhaInput === " " || cpfInput === " " ){
       alert("Preencha todos os campos")
       return
     }
@@ -30,7 +36,7 @@ export function Cadastro(){
       email: emailInput,
       academia: academiaInput,
       senha: senhaInput,
-      repetirsenha: repetirsenhaInput,
+      cpf: cpfInput,
       created: new Date()
 
     })
@@ -39,7 +45,7 @@ export function Cadastro(){
       setEmailInput("")
       setAcademiaInput("")
       setSenhaInput("")
-      setRepetirSenhaInput("")
+      setCpfInput("")
       console.log("CADASTRADO COM SUCESSO")
 
     })
@@ -77,9 +83,9 @@ export function Cadastro(){
           onChange={ (e) => setSenhaInput(e.target.value) }
         />
         <Input className={styles.formInput}
-           placeholder="Repetir senha:"
-           value={repetirsenhaInput}
-          onChange={ (e) => setRepetirSenhaInput(e.target.value) }
+           placeholder="Cpf:"
+           value={cpfInput}
+          onChange={ (e) => setCpfInput(e.target.value) }
         />
 
         <button type='submit' className='button'>CADASTRAR</button>
