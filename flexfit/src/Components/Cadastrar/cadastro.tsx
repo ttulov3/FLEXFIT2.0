@@ -26,7 +26,7 @@ export function Cadastro(){
 
   function registro(e: FormEvent){
     e.preventDefault();
-    if(nomeInput === " " || emailInput === " " ||academiaInput === " " || senhaInput === " " || cpfInput === " " ){
+    if(nomeInput === " " || emailInput === " " ||academiaInput === " " || senhaInput === " " || cpfInput === " " || sexoInput === " " || dataNascimentoInput === " " || telefoneInput === " " ||  objetivoInput === " " || observacaoInput === " " ){
       alert("Preencha todos os campos")
       return
     }
@@ -35,8 +35,13 @@ export function Cadastro(){
       nome:nomeInput,
       email: emailInput,
       academia: academiaInput,
-      senha: senhaInput,
+      sexo: sexoInput,
+      dataNasc: dataNascimentoInput,
+      telefone: telefoneInput,
+      objetivo: objetivoInput,
+      obsercacao: observacaoInput,
       cpf: cpfInput,
+      senha: senhaInput,
       created: new Date()
 
     })
@@ -44,8 +49,13 @@ export function Cadastro(){
       setNomeInput("")
       setEmailInput("")
       setAcademiaInput("")
-      setSenhaInput("")
+      setSexoInput("")
+      setdataNascimentoInput("")
+      setTelefoneInput("")
+      setObjetivoInput("")
+      setObservacaoInput("")
       setCpfInput("")
+      setSenhaInput("")
       console.log("CADASTRADO COM SUCESSO")
 
     })
@@ -76,6 +86,16 @@ export function Cadastro(){
            placeholder="Academia:"
            value={academiaInput}
           onChange={ (e) => setAcademiaInput(e.target.value) }
+        />
+         <Input className={styles.formInput}
+           placeholder="Sexo:"
+           value={senhaInput}
+          onChange={ (e) => setSenhaInput(e.target.value) }
+        />
+         <Input className={styles.formInput}
+           placeholder="Senha:"
+           value={senhaInput}
+          onChange={ (e) => setSenhaInput(e.target.value) }
         />
         <Input className={styles.formInput}
            placeholder="Senha:"
